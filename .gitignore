@@ -10,3 +10,10 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+*.log
+*.xml
+newsbot
+vendor/
+test-reports/
+.DS_Store
+tmp

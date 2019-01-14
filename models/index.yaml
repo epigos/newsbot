@@ -1,0 +1,30 @@
+indexes:
+
+- kind: "Articles"
+  properties:
+  - name: "Domain"
+  - name: "Published"
+    direction: desc
+- kind: "Articles"
+  properties:
+  - name: "Domain"
+  - name: "Tags"
+  - name: "TopicKey"
+  - name: "Published"
+    direction: desc
+- kind: "Articles"
+  properties:
+  - name: "Domain"
+  - name: "Tags"
+  - name: "Published"
+    direction: desc
+- kind: "Articles"
+  properties:
+  - name: "Tags"
+  - name: "Published"
+    direction: desc
+- kind: "Articles"
+  properties:
+  - name: "TopicKey"
+  - name: "Published"
+    direction: desc

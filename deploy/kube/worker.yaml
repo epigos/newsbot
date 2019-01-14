@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: worker
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: epigos
+        service: worker
+    spec:
+      containers:
+      - name: worker
+        image: eu.gcr.io/epigos-ai-dev/newsbot:deploy
+        imagePullPolicy: Always
+        resources: {}
+        command: ["/go/bin/newsbot", "-crawler=true"]
+        envFrom:
+        - configMapRef:
+            name: env-config
+
